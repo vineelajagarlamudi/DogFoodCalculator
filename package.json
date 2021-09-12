@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run"
+    "test": "node ./node_modules/mocha/bin/mocha"
   },
-
   "dependencies": {
-    "mocha" : "^6.2.3"
+    "mocha": "^6.2.3",
+    "chai": "^4.3.4"
   },
   "keywords": [],
   "author": "",
