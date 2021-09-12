@@ -2,7 +2,7 @@ This project contains the source code and tests for calculating total food to be
 - src/DogFunction.js : has the source code that has foodCalculator method
 - test/ : contains all the unit tests (happy path, error case, edge case scenarios) for validating foodCalculator
 
-##Prerequisites
+Prerequisites
 - Make sure to install latest Node JS version
 
 Steps to download and run the tests:
