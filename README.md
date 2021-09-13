@@ -1,9 +1,10 @@
+# Dog Food Calculator
 This project contains the source code and tests for calculating total food to be ordered for a dog shelter. It contains the following : 
 - src/DogFunction.js : has the source code that has foodCalculator method
 - test/ : contains all the unit tests (happy path, error case, edge case scenarios) for validating foodCalculator
 
 
-##Prerequisites
+### Prerequisites
 - Make sure to install latest Node JS version(tested on -v14.17)
 
 
