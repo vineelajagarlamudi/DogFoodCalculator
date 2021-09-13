@@ -3,7 +3,7 @@ This project contains the source code and tests for calculating total food to be
 - test/ : contains all the unit tests (happy path, error case, edge case scenarios) for validating foodCalculator
 
 ##Prerequisites
-- Make sure to install latest Node JS version
+- Make sure to install latest Node JS version(tested on -v14.17)
 
 Steps to download and run the tests:
 - 

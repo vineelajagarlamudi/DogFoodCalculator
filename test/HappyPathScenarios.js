@@ -22,23 +22,19 @@ describe('Happy path scenarios', function () {
         expect(result).to.equal(360);
     })
 
-    it('should return total food to be ordered even if one of the category of dogs is 0', function () {
+    it('should return total food to be ordered when small category of dogs is 0', function () {
         let result = foodCalculator(0,5,10,30);
         expect(result).to.equal(444);
     })
 
-    it('should return total food to be ordered even if one of the category of dogs is 0', function () {
+    it('should return total food to be ordered when medium category of dogs is 0', function () {
         let result = foodCalculator(5,0,10,30);
         expect(result).to.equal(384);
     })
 
-    it('should not order food if the toal needed food is less than left over food', function () {
-        let result = foodCalculator(5,5,5,400);
-        expect(result).to.equal(0);
+    it('should return total food to be ordered when large category of dogs is 0', function () {
+        let result = foodCalculator(5,10,0,30);
+        expect(result).to.equal(264);
     })
 
-    it('should not order food if the toal needed food is equal to left over food', function () {
-        let result = foodCalculator(5,5,5,360);
-        expect(result).to.equal(0);
-    })
 })

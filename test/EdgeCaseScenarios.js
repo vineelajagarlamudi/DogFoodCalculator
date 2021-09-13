@@ -17,4 +17,29 @@ describe('Edge case scenarios', function () {
         expect(result).to.equal(0);
     })
 
+    it('should not order food if the toal needed food is less than left over food', function () {
+        let result = foodCalculator(5,5,5,400);
+        expect(result).to.equal(0);
+    })
+
+    it('should not order food if the toal needed food is equal to left over food', function () {
+        let result = foodCalculator(5,5,5,360);
+        expect(result).to.equal(0);
+    })
+
+
+    it('should return total food to be ordered when all dogs are small', function () {
+        let result = foodCalculator(30,0,0,0);
+        expect(result).to.equal(360);
+    })
+
+    it('should return total food to be ordered when all dogs are medium', function () {
+        let result = foodCalculator(0,30,0,0);
+        expect(result).to.equal(720);
+    })
+    it('should return total food to be ordered when all dogs are large', function () {
+        let result = foodCalculator(0,0,30,0);
+        expect(result).to.equal(1080);
+    })
+
 })
